@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>Snake Game</title>
+<link rel ="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+
+<div class="container">
+ <p id="loading">You cannot escape!!!</p>
+<div id= "overlay">
+    Your Final Score: <span id = "final_score"></span>
+	<br>
+	<a onClick="window.location.reload()" href="#"> Try again</a>
+   <a href="#" id="tweet" target="_blank" rel="nofollow">Tweet My Score</a> 
+	</div>
+<canvas id ="canvas" width="600" height="450"></canvas>
+<div id="stats">
+<div id="score"></div>
+<div id="high_score"></div>
+<button onclick="resetScore()" id="reset_score">Reset High Score</button>
+</div>
+</div>
+
+<!-- Audio  music taken by http://cssdeck.com/labs/classic-snake-game-with-html5-canvas-->
+<!--Please don't sue!!!-->
+    <audio id="main_music" loop>
+	<source src="http://dl.dropbox.com/u/26141789/canvas/snake/main.mp3" type="audio/mp3" />
+	<audio id="gameOver">
+	<source src="http://dl.dropbox.com/u/26141789/canvas/snake/go.mp3" type="audio/mp3" />
+  
+	</audio>
+
+<!-- JQuery-->
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+ <!--MAIN JS-->
+ <script src="script.js"></script> 
+ </body>
+
+</html>
